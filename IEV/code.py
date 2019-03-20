@@ -1,0 +1,10 @@
+with open('rosalind_iev.txt', 'r') as f:
+    [AAAA, AAAa, AAaa, AaAa, Aaaa, aaaa] = f.readlines()[0].strip().split()
+    AAAA = int(AAAA)
+    AAAa = int(AAAa)
+    AAaa = int(AAaa)
+    AaAa = int(AaAa)
+    Aaaa = int(Aaaa)
+    aaaa = int(aaaa)
+    E = 2 * ((AAAA + AAAa + AAaa) + 0.75 * AaAa + 0.5 * Aaaa)
+    print(E)
